@@ -253,6 +253,24 @@ overflow: hidden;
         transform: translateY(100vh);
         opacity: 0;
     }
+}/* Botão da música */
+.botao-musica {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 90, 140, 0.25);
+}
+
+.botao-musica:hover {
+    background: rgba(255, 90, 140, 0.35);
+    transform: scale(1.05);
 }
 </style>
 
@@ -267,7 +285,10 @@ overflow: hidden;
 <div class="conteudo">
 
 <h1>Nossa História ❤️</h1>
-
+    
+<button onclick="document.getElementById('musica').play()" class="botao-musica">
+    🎵 Tocar nossa música
+</button>
 <p class="texto">
 No meio de milhões de pessoas, encontrei em ti o meu lugar favorito. ❤️
 <br><br>
