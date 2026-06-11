@@ -112,6 +112,18 @@ h1 {
 @media(max-width: 768px) {
     .frase-conteudo p {
         font-size: 1.5rem;
+        .galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 26px;
+}
     }
 }/* Terceira tela - Álbum de fotos */
 .album {
@@ -159,17 +171,7 @@ h1 {
         font-size: 2rem;
     }
 
-  .galeria {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
 
-.galeria img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    border-radius: 26px;
 }
     }
 }/* Mensagem final */
