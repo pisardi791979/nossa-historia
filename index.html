@@ -300,6 +300,32 @@ z-index: 2;
 .botao-musica:hover {
     background: rgba(255, 90, 140, 0.35);
     transform: scale(1.05);
+}.nome-casal {
+    margin-top: 40px;
+    font-size: 2.2rem;
+    color: #ffb6c1;
+    text-shadow: 0 0 15px rgba(255,105,180,0.5);
+    animation: brilhoAmor 2.5s ease-in-out infinite;
+}
+
+@keyframes brilhoAmor {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+        text-shadow:
+            0 0 10px rgba(255,105,180,0.7),
+            0 0 25px rgba(255,105,180,0.9);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
 }
 </style>
 
@@ -414,8 +440,9 @@ Love you ❤️😍
             “E esse é apenas o início da nossa história.
             Os melhores capítulos ainda estão por vir. ❤️”
         </p>
-        <h2 style="margin-top:40px; font-size:2.2rem; color:#ffb6c1; text-shadow:0 0 15px rgba(255,105,180,0.5);">
-    Maurilio &amp; Micylleny ❤️
+        <h2 <h2 class="nome-casal">
+    Maurilio ❤️ Micylleny
+</h2>
 </h2>
     </div>
 </section>
