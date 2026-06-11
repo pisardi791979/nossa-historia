@@ -85,6 +85,34 @@ h1 {
     .texto {
         font-size: 1rem;
     }
+}/* Segunda tela - Frase especial */
+.frase {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #000000, #12070f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.frase-conteudo {
+    max-width: 900px;
+    animation: aparecer 2s ease;
+}
+
+.frase-conteudo p {
+    font-size: 2.4rem;
+    line-height: 1.7;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 90, 140, 0.5);
+}
+
+/* Ajuste para celular */
+@media(max-width: 768px) {
+    .frase-conteudo p {
+        font-size: 1.5rem;
+    }
 }
 </style>
 
@@ -115,6 +143,12 @@ Love you ❤️😍
 </div>
 
 </section>
-
+<section class="frase">
+    <div class="frase-conteudo">
+        <p>
+            "Contigo tudo é diferente, porque até os dias simples se tornam especiais ao seu lado ❤️‍🔥👫🏻."
+        </p>
+    </div>
+</section>
 </body>
 </html>
