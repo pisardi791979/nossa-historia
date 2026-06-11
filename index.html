@@ -162,6 +162,33 @@ h1 {
     .galeria img {
         height: 430px;
     }
+}/* Mensagem final */
+.final {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #000000, #1a0a12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.final-conteudo {
+    max-width: 900px;
+    animation: aparecer 2s ease;
+}
+
+.final-conteudo p {
+    font-size: 2.3rem;
+    line-height: 1.8;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 90, 140, 0.5);
+}
+
+@media(max-width: 768px) {
+    .final-conteudo p {
+        font-size: 1.5rem;
+    }
 }
 </style>
 
@@ -255,6 +282,12 @@ Love you ❤️😍
     </div>
 
 </section>
-    
+    <section class="final">
+    <div class="final-conteudo">
+        <p>
+            “E esse é apenas o início da nossa história. Os melhores capítulos ainda estão por vir. ❤️”
+        </p>
+    </div>
+</section>
 </body>
 </html>
