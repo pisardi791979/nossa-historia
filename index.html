@@ -202,6 +202,8 @@ overflow: hidden;
 .final-conteudo {
     max-width: 900px;
     animation: aparecer 2s ease;
+    position: relative;
+z-index: 2;
 }
 
 .final-conteudo p {
@@ -215,11 +217,13 @@ overflow: hidden;
     .final-conteudo p {
         font-size: 1.5rem;
     }
-}/* Corações finais */
+}
+    /* Corações finais */
 .coracoes {
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 1;
     overflow: hidden;
     left: 0;
     top: 0;
