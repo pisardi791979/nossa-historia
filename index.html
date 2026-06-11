@@ -286,7 +286,7 @@ overflow: hidden;
 
 <h1>Nossa História ❤️</h1>
     
-<button onclick="document.getElementById('musica').play()" class="botao-musica">
+<button onclick="toggleMusica()" class="botao-musica" id="botaoMusica">
     🎵 Tocar nossa música
 </button>
 <p class="texto">
@@ -384,5 +384,19 @@ Love you ❤️😍
     <span>💖</span>
 </div>
 </section>
+    <script>
+function toggleMusica() {
+    const musica = document.getElementById("musica");
+    const botao = document.getElementById("botaoMusica");
+
+    if (musica.paused) {
+        musica.play();
+        botao.innerHTML = "⏸️ Pausar nossa música";
+    } else {
+        musica.pause();
+        botao.innerHTML = "🎵 Tocar nossa música";
+    }
+}
+</script>
 </body>
 </html>
